@@ -19,7 +19,7 @@ workbook = load_workbook(file_path)
 
 heading_count = 0
 while heading_count < 1 or heading_count > 6:
-    heading_count = int(input("What level of heading? "))
+    heading_count = int(input("What level of heading should each table be labeled as? [1-6] "))
 
 heading = ""
 for i in range(1, heading_count + 1):
