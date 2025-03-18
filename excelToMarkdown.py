@@ -38,7 +38,7 @@ for sheet_name in workbook.sheetnames:
             if column.value is None:
                 continue
 
-            columns.append(column.value)
+            columns.append(str(column.value))
 
         print("|"+"|".join(columns)+"|")
         if i == 0:
